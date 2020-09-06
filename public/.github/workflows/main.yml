@@ -1,0 +1,14 @@
+# on: push
+# name: Publish Website
+# jobs:
+#   FTP-Deploy-Action:
+#     name: FTP-Deploy-Action
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@master
+#     - name: FTP-Deploy-Action
+#       uses: SamKirkland/FTP-Deploy-Action@3.0.0
+#       with:
+#         ftp-server: ftp://209.188.18.144/var/www/html/dev/
+#         ftp-username: root
+#         ftp-password: IU3yhD1CRAC1990#@#

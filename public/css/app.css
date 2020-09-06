@@ -1,0 +1,306 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+	/* overflow: hidden; */
+}
+
+body{
+	background: #ecf0f1;
+	height: 100%;
+}
+
+aside{
+	/* width: 210px; */
+	width: 17%;
+	background: #fff;
+	/* padding: 20px; */
+	height: 100%;
+	position: fixed;
+	box-shadow: 2px 0px 4px rgba(0,0,0,.1);
+}
+
+aside .opcion{
+	padding: 10px 20px;
+	font-weight: 600;
+	color: #1D1C1A;
+	font-size: 1.1rem;
+	border: none;
+	background: none;
+	display: block;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+}
+
+aside .opcion:hover{
+	background: rgb(245, 245, 245);
+	text-decoration: none;
+}
+
+.header{
+	background: #fff;
+	padding: 10px 10px;
+	z-index: 100;
+	width: 100%;
+	position: fixed;
+	border-bottom: 2px solid rgba(29, 28, 26, 0.103);
+}
+
+.header .main-title{
+	color: #1D1C1A;
+	font-size: 1.6rem;
+	margin-bottom: 0;
+	font-weight: 700;
+	padding-left: 10px;
+}
+
+/* -------------------------------------------------- */
+
+.btn-title{
+	font-size: .9rem;
+	background: #f38a13;
+	color: #fff;
+	font-weight: 500;
+	border: none;
+	padding: 6px 15px;
+}
+
+.btn-title:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn-title.edit{
+	background: none;
+	border: 1px solid #EE8813;
+	color: #EE8813;
+}
+
+.btn-title.danger{
+	background: #DF3E3E !important
+}
+
+.main-container{
+	padding: 20px;
+	margin: 15px;
+	background: #fff;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.1);
+}
+
+.custom-table{
+	width: 100%;
+	margin-top: 15px;
+}
+
+.custom-table thead{
+	background: #1D1C1A;
+	color: #fff;
+	width: 100%;
+}
+
+
+.custom-table th,
+.custom-table td{
+	padding: 2px 30px;
+}
+
+.custom-table th{
+	font-weight: 400;
+	font-size: .95rem;
+}
+
+.custom-table td{
+	color: #646464;
+
+}
+
+.custom-table tr:nth-child(even){
+	background: #f5f5f5;
+}
+
+.btn-detalles{
+	border: none;
+	color: #fff;
+	/* background: #1d1c1a; */
+	text-align: center;
+	font-size: .9rem;
+	padding: 2px 6px;
+	background: #f38a13;
+	font-weight: 400;
+	margin: 7px 0;
+	display: block;
+	color: #fff !important;
+}
+
+.btn-detalles:focus{
+	border: none;
+	text-decoration: none !important;
+}
+
+.btn-detalles:hover{
+	border: none;
+	text-decoration: none !important;
+}
+
+/* ------------------------------------- */
+
+.modal-large{
+	width: 80%
+}
+
+.modal-info > label{
+	display: block;
+	margin-bottom: 0;	
+}
+
+.modal-info > label:nth-child(1){
+	font-size: .9rem;
+	font-weight: 400;
+}
+
+.modal-info > label:nth-child(2){
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.scroll-container{
+	overflow-y: scroll;
+	max-height: 250px;
+	height: 250px;
+}
+
+.contenedor-valores .val-label{
+	font-size: .85rem;
+}
+
+.contenedor-valores .val-value{
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.btn-asignar-trans{
+	border: none;
+	font-size: .8rem;
+	background: #f38a13;
+	color: #fff;
+	padding: 3px 6px;
+	border-radius: 4px;
+}
+
+/* --------------------------------- */
+
+.loader {
+	border: 6px solid #f3f3f3; /* Light grey */
+	border-top: 6px solid #1D1C1A;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin .8s linear infinite;
+	position: relative;
+	margin: 0 auto;
+ }
+
+ .hide-loader,
+  .hide{
+	 display: none
+ }
+ 
+ @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+ }
+
+ 
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #c9c9c9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* --------------------------- */
+.form-label{
+	color: #EE8813;
+	font-size: .9rem;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.form-input{
+	width: 100%;
+	display: block;
+	padding: 3px 4px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #1D1C1A;
+}
+
+
+.upload-img{
+	border: 2px dashed #ccc;
+	width: 100%;
+	background: rgb(247, 247, 247);
+	cursor: pointer;
+	position: relative;
+}
+
+.upload-img img{
+	width: 100%;
+	vertical-align: top;
+}
+
+.pagination{
+	margin-top: 15px;
+}
+
+.page-item.active > span{
+	background: #EE8813 !important;
+	border-color: #EE8813 !important;
+	color: #fff !important;
+}
+
+.page-item > .page-link{
+	color: #1D1C1A !important
+}
+
+.btn-filter{
+	/* color: rgb(36, 36, 36); */
+	font-size: .8rem;
+	color: #fff;
+	background: #EE8813;
+	padding: 4px 10px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.filter-container{
+	background: #f0f2f3;
+	padding: 5px 20px;
+}
+
+.filter-container span{
+	font-weight: 600;
+	padding-right: 10px;
+}
+
+.filter-container select{
+	border: none;
+	padding: 2px 10px;
+	background: #f8f8f8;
+}
